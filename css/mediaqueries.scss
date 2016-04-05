@@ -1,0 +1,51 @@
+@import 'mixin';
+
+@media screen and (max-width: 1024px) {
+  #menu-header-menu{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .social{
+    position: static !important;
+    margin-top: (20em/16);
+    li{
+      text-align: center !important;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .article{
+    .details-img,.principal-img,.details{
+      float: none;
+      width: 100%;
+    }
+
+    .thumbnails{
+      width: 100%;
+      li{
+        float: left;
+        width: 30%;
+      }
+    }
+
+  }
+}
+
+
+
+@media (min-width: 361px) and (max-width: 768px) {
+  .bx-wrapper .bx-viewport{
+    width: 77% !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .bx-wrapper .bx-viewport{
+    width: 62% !important;
+  }
+}
+
+
