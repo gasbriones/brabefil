@@ -21,6 +21,16 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'GothamRounded-Bold';
+  src: url('../fonts/GothamRounded-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamRounded-Bold.otf')  format('opentype'),
+  url('../fonts/GothamRounded-Bold.woff') format('woff'),
+  url('../fonts/GothamRounded-Bold.ttf')  format('truetype'),
+  url('../fonts/GothamRounded-Bold.svg#GothamRounded-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 html, body {
   margin: 0;
@@ -51,22 +61,30 @@ html, body {
   }
 }
 
-.logo{
+.header{
   margin-top: (45em/16);
   text-align: center;
   a{
     display: block;
   }
-}
-.slogan{
-  font-family: GothamRounded-Medium;
-  font-size: (20em/16);
-  color: #0D6899;
-  margin-top: (20em/20);
-  display: block;
-}
-.gsv{
-  margin-top: (25em/16);
+
+  .slogan{
+    font-family: GothamRounded-Medium;
+    font-size: (20em/16);
+    color: #0D6899;
+    margin-top: (20em/20);
+    display: block;
+  }
+  .gsv{
+    margin-top: (25em/16);
+  }
+
+  .services{
+    font-family: GothamRounded-Bold;
+    font-size: (28em/16);
+    color:#0D6899;
+    margin-top: (30em/28);
+  }
 }
 
 .item-list{

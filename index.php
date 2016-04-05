@@ -19,8 +19,8 @@
     <section class="home">
         <div class="wrapper content">
             <div class="grid">
-                <div class="col-6 logo" push-left="off-3">
-                    <a href="#">
+                <div class="col-6 header" push-left="off-3">
+                    <a href="#" class="logo">
                         <img src="images/logo.png"/>
                     </a>
                     <span class="slogan">
@@ -29,6 +29,7 @@
                     <div class="gsv">
                         <img src="images/logo_GVS.png" />
                     </div>
+                    <div class="services">Cromatografía - Filtración- Microbiología</div>
                 </div>
                 <div class="col-2" push-left="off-1">
                     <ul class="item-list">
