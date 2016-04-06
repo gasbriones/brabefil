@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="site">
-    <section class="home">
+    <section class="home clearfix">
         <div class="wrapper content">
             <div class="grid">
                 <div class="col-6 header" push-left="off-3">
@@ -48,14 +48,45 @@
                     </ul>
                 </div>
             </div>
+            <div class="grid-center">
+                <div class="col-11">
+                    <div class="dialog grid-spaceBetween">
+                        <div class="col-4"><img src="images/catalogo-orb.png" /></div>
+                        <div class="col-4"><img src="images/new-orb.png" /></div>
+                        <div class="col-4"><img src="images/contact-orb.png" /></div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
-    <section class="catalog">
+    <section class="catalog clearfix">
         <div class="wrapper content">
-            <div>content</div>
+            <div class="grid">
+                <div push-left="off-3" class="col-7">
+                    <h2 class="title">Catálogo digital</h2>
+                    <div class="instructions grid-middle">
+                        <div class="pdf-icon col-3">
+                            <img src="images/pdf-icon.png">
+                        </div>
+                        <div class="text col-7">
+                            Descargue nuestro Catálogo de
+                            Productos en formato PDF con
+                            toda información técnica.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 download">
+                    <a href="#"><img src="images/download.png" /></a>
+                </div>
+            </div>
+            <div class="grid news">
+                <div class="tubos col-4"></div>
+                <div class="news-info col-8"></div>
+            </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact clearfix">
         <div class="wrapper content">
             <div>content</div>
         </div>

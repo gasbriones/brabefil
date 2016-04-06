@@ -32,6 +32,18 @@
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: 'GothamRounded-Light';
+  src: url('../fonts/GothamRounded-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamRounded-Light.otf')  format('opentype'),
+  url('../fonts/GothamRounded-Light.woff') format('woff'),
+  url('../fonts/GothamRounded-Light.ttf')  format('truetype'),
+  url('../fonts/GothamRounded-Light.svg#GothamRounded-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -49,6 +61,7 @@ html, body {
   background-size: cover;
   position: relative;
   border-bottom: solid #0D6899 (20em/16);
+  z-index: 0;
   &:before{
     position: absolute;
     width: 100%;
@@ -58,6 +71,7 @@ html, body {
     background-size: cover;
     top:50%;
     left: 0;
+    z-index: -1;
   }
 }
 
@@ -96,5 +110,65 @@ html, body {
   margin-top: (30em/18);
   li{
     margin-bottom: (10em/18);
+  }
+}
+
+.dialog{
+  z-index: 99;
+  [class*="col-"]{
+    text-align: center;
+  }
+  margin-top: (10em/16);
+}
+
+.catalog{
+  background: #fff;
+  .title{
+    font-size: (52em/16);
+    font-family: GothamRounded-Medium;
+    background: #0D6899;
+    color: #fff;
+    text-transform: uppercase;
+    display: table;
+    margin-top: (70em/52);
+    padding: (10em/52)  (40em/52) (2em/52) (65em/52);
+  }
+  .download{
+    margin-top: (50em/16);
+  }
+  .text{
+    font-size: (25em/16);
+    font-family: GothamRounded-Light;
+    color: #58585A;
+  }
+  .pdf-icon{
+    text-align: center;
+    z-index: 99;
+  }
+  .instructions{
+    margin-top: (30em/16);
+    position: relative;
+    &:before{
+      position: absolute;
+      width: (306em/16);
+      height: (372em/16);
+      content: "";
+      background: url("../images/catalogo-img.png") no-repeat;
+      background-size: cover;
+      top:(-235em/16);
+      left: (-201em/16);
+    }
+  }
+}
+
+.news{
+  margin-top: (30em/16);
+  height: (438em/16);
+  .tubos{
+    background: url("../images/tubos.png");
+    background-size: cover;
+  }
+  .news-info{
+    background: url("../images/fondo_azul.png");
   }
 }
