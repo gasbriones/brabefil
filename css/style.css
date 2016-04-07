@@ -121,5 +121,42 @@ html, body {
     background-size: cover; }
   .news .news-info {
     background: url("../images/fondo_azul.png"); }
+  .news .alert {
+    background: #DEDA00;
+    color: #ffffff;
+    display: table;
+    font-size: 1.875em;
+    font-family: GothamRounded-Medium;
+    text-transform: uppercase;
+    padding: 0 0.33333em;
+    margin-top: 2.33333em;
+    z-index: 4;
+    position: relative; }
+  .news .mini {
+    background: #1DAFEC;
+    color: #ffffff;
+    display: table;
+    font-size: 3.25em;
+    font-family: GothamRounded-Book;
+    text-transform: uppercase;
+    padding: 0.28846em 0 0 1.34615em;
+    width: 100%;
+    margin: -0.19231em 0 0 -1.53846em;
+    z-index: 3;
+    position: relative; }
+    .news .mini span {
+      font-family: GothamRounded-Bold; }
+  .news p {
+    font-size: 1.5625em;
+    color: #ffffff;
+    width: 95%;
+    font-family: GothamRounded-Book;
+    padding-left: 0.4em; }
+    .news p.other-font {
+      font-family: GothamRounded-Medium; }
+  .news .no-margin {
+    padding: 0; }
+  .news .tube-2 {
+    margin-top: 3.125em; }
 
 /*# sourceMappingURL=style.css.map */

@@ -82,7 +82,20 @@
             </div>
             <div class="grid news">
                 <div class="tubos col-4"></div>
-                <div class="news-info col-8"></div>
+                <div class="news-info col-8 grid">
+                    <div class="col-6 no-margin">
+                        <h3 class="alert">Nuevo!</h3>
+                        <h2 class="mini">Mini <span>vial</span></h2>
+                        <p>Haga más fácil el proceso de
+                            preparación de muestras.</p>
+                        <p class="other-font">Menor volúmen muerto del
+                            mercado.</p>
+                    </div>
+                    <div class="col-6 no-margin tube-2">
+                        <img src="images/tubos-2.png" />
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>

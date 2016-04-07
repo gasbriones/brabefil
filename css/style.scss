@@ -171,4 +171,53 @@ html, body {
   .news-info{
     background: url("../images/fondo_azul.png");
   }
+
+  .alert{
+    background: #DEDA00;
+    color: #ffffff;
+    display: table;
+    font-size: (30em/16);
+    font-family: GothamRounded-Medium;
+    text-transform: uppercase;
+    padding: 0 (10em/30);
+    margin-top: (70em/30);
+    z-index: 4;
+    position: relative;
+  }
+
+  .mini{
+    background: #1DAFEC;
+    color: #ffffff;
+    display: table;
+    font-size: (52em/16);
+    font-family: GothamRounded-Book;
+    text-transform: uppercase;
+    padding: (15em/52) 0 0 (70em/52);
+    width: 100%;
+    margin: (-10em/52) 0 0 (-80em/52);
+    z-index: 3;
+    position: relative;
+    span{
+      font-family: GothamRounded-Bold;
+    }
+  }
+  p{
+    font-size: (25em/16);
+    color: #ffffff;
+    width: 95%;
+    font-family: GothamRounded-Book;
+    padding-left: (10em/25);
+    &.other-font{
+      font-family: GothamRounded-Medium;
+    }
+  }
+
+
+  .no-margin{
+    padding: 0;
+  }
+
+  .tube-2{
+    margin-top:(50em/16) ;
+  }
 }
