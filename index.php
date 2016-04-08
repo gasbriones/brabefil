@@ -8,15 +8,20 @@
     <!-- Links -->
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/gridlex.min.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
     <link href="css/hover-min.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/mediaqueries.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="favicon.ico"/>
+
+    <script src="js/libs/jquery-2.1.3.min.js"></script>
+    <script src="js/libs/wow.min.js"></script>
+    <script src="js/init.js"></script>
     <title>Brabefil - Distribuidores de GVS - Life Sciences </title>
 </head>
 <body>
 <div class="site">
-    <section class="home clearfix">
+    <section id="home" class="home clearfix">
         <div class="wrapper content">
             <div class="grid">
                 <div class="col-6 header" push-left="off-3">
@@ -32,7 +37,7 @@
                     <div class="services">Cromatografía - Filtración- Microbiología</div>
                 </div>
                 <div class="col-2" push-left="off-1">
-                    <ul class="item-list">
+                    <ul class="item-list" data-wow-duration="1s" data-wow-iteration="1">
                         <li>Filtros papel</li>
                         <li>Membranas</li>
                         <li>Filtros jeringas</li>
@@ -51,20 +56,20 @@
             <div class="grid-center">
                 <div class="col-11">
                     <div class="dialog grid-spaceBetween">
-                        <div class="col-4"><img src="images/catalogo-orb.png" /></div>
-                        <div class="col-4"><img src="images/new-orb.png" /></div>
-                        <div class="col-4"><img src="images/contact-orb.png" /></div>
+                        <div class="col-4"><a class="hvr-float" href="#catalogo"><img class="wow bounceInLeft " src="images/catalogo-orb.png"/></a></div>
+                        <div class="col-4"><a class="hvr-float" href="#news"><img class="wow bounceInUp" src="images/new-orb.png" /></a></div>
+                        <div class="col-4"><a class="hvr-float" href="#contacto"><img class="wow bounceInRight" src="images/contact-orb.png" /></a></div>
                     </div>
                 </div>
             </div>
 
         </div>
     </section>
-    <section class="catalog clearfix">
+    <section id="catalogo" class="catalog clearfix">
         <div class="wrapper content">
             <div class="grid">
                 <div push-left="off-3" class="col-7">
-                    <h2 class="title">Catálogo digital</h2>
+                    <h2 class="title wow bounceInLeft">Catálogo digital</h2>
                     <div class="instructions grid-middle">
                         <div class="pdf-icon col-3">
                             <img src="images/pdf-icon.png">
@@ -77,14 +82,14 @@
                     </div>
                 </div>
                 <div class="col-2 download">
-                    <a href="#"><img src="images/download.png" /></a>
+                    <a href="#" class="hvr-grow"><img class="wow bounceInDown" src="images/download.png" /></a>
                 </div>
             </div>
-            <div class="grid news">
-                <div class="tubos col-4"></div>
+            <div id="news" class="grid news">
+                <div class="tubos col-4 wow pulse"></div>
                 <div class="news-info col-8 grid">
                     <div class="col-6 no-margin">
-                        <h3 class="alert">Nuevo!</h3>
+                        <h3 class="alert wow fadeInDown">Nuevo!</h3>
                         <h2 class="mini">Mini <span>vial</span></h2>
                         <p>Haga más fácil el proceso de
                             preparación de muestras.</p>
@@ -92,18 +97,18 @@
                             mercado.</p>
                     </div>
                     <div class="col-6 no-margin tube-2">
-                        <img src="images/tubos-2.png" />
+                        <img class="wow flipInX" src="images/tubos-2.png" />
                     </div>
 
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact clearfix">
+    <section id="contacto" class="contact clearfix">
         <div class="wrapper content">
             <div class="grid">
                 <div class="col-5 no-margin">
-                    <div class="form clearfix">
+                    <div class="form clearfix wow fadeInUpBig">
                         <h2 class="title">Formulario</h2>
                         <div class="grid-center">
                             <div class="col-9">
@@ -126,9 +131,9 @@
                                 a los siguientes números:
                             </p>
                             <p class="numbers">
-                                (54 11) 5613 0115<br/>
-                                (54 11) 5420 1773<br/>
-                                (54 11) 6715 9047
+                                <a href="tel:+541156130115" class="wow bounceInRight" >(54 11) 5613 0115</a>
+                                <a href="tel:+541154201773" class="wow bounceInRight" >(54 11) 5420 1773</a>
+                                <a href="tel:+541167159047" class="wow bounceInRight">(54 11) 6715 9047</a>
                             </p>
                         </div>
                     </div>

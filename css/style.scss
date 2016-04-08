@@ -313,10 +313,19 @@ html, body {
       font-size: (25em/16);
     }
     .numbers{
-      color: #ffffff;
-      font-family: GothamRounded-Medium;
       font-size: (42em/16);
-      line-height:(25em/16) ;
+      border-radius:(40em/42);
+      box-sizing: border-box;
+      padding: (25em/42);
+      border: solid 1px #ffffff;
+      a{
+        color: #ffffff;
+        font-family: GothamRounded-Medium;
+
+        line-height:(25em/16);
+        text-decoration: none;
+      }
+
     }
   }
 }

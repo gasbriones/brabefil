@@ -253,9 +253,15 @@ html, body {
     font-family: GothamRounded-Book;
     font-size: 1.5625em; }
   .contact .data-contact .numbers {
-    color: #ffffff;
-    font-family: GothamRounded-Medium;
     font-size: 2.625em;
-    line-height: 1.5625em; }
+    border-radius: 0.95238em;
+    box-sizing: border-box;
+    padding: 0.59524em;
+    border: solid 1px #ffffff; }
+    .contact .data-contact .numbers a {
+      color: #ffffff;
+      font-family: GothamRounded-Medium;
+      line-height: 1.5625em;
+      text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
