@@ -101,7 +101,40 @@
     </section>
     <section class="contact clearfix">
         <div class="wrapper content">
-            <div>content</div>
+            <div class="grid">
+                <div class="col-5 no-margin">
+                    <div class="form clearfix">
+                        <h2 class="title">Formulario</h2>
+                        <div class="grid-center">
+                            <div class="col-9">
+                                <form>
+                                    <input type="text"placeholder="Nombre" />
+                                    <input type="text"placeholder="Empresa" />
+                                    <textarea placeholder="Mensaje"></textarea>
+                                    <input type="image" src="images/submit.png" value="enviar">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 no-margin data-contact">
+                    <h2 class="title-2">Contacto</h2>
+                    <div class="grid-center">
+                        <div class="col-7">
+                            <p class="text">
+                                Comuníquese con nosotros
+                                a los siguientes números:
+                            </p>
+                            <p class="numbers">
+                                (54 11) 5613 0115<br/>
+                                (54 11) 5420 1773<br/>
+                                (54 11) 6715 9047
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 </div>

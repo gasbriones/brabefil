@@ -213,11 +213,110 @@ html, body {
   }
 
 
-  .no-margin{
-    padding: 0;
-  }
+
 
   .tube-2{
     margin-top:(50em/16) ;
+  }
+}
+
+.no-margin{
+  padding: 0;
+}
+.contact{
+  background: #92DAE9;
+  padding: (50em/16) 0;
+  .form{
+    width: auto;
+    height: (529em/16);
+    @include border_radius((30em/16));
+    @include gradient_v(#DEDEE1,#AEB1B3);
+    position: relative;
+    margin-left: 15%;
+    z-index: 90;
+
+    &:before{
+      position: absolute;
+      width:(96em/16) ;
+      height: (96em/16);
+      content: "";
+      background: url("../images/contact-icon.png") no-repeat;
+      top:(-15em/16);
+      left: (-15em/16);
+      z-index: 99;
+    }
+    .title{
+      color: #7DBACB;
+      font-family: GothamRounded-Medium;
+      font-size: (33em/16);
+      text-transform: uppercase;
+      text-align: center;
+      line-height: (40em/16);
+      box-sizing: border-box;
+    }
+    input[type="text"]{
+      display: block;
+      width: 100%;
+      background: #ffffff;
+      line-height: (40em/16);
+      font-size: (19em/16);
+      font-family: GothamRounded-Medium;
+      color: #6F7072;
+      box-sizing: border-box;
+      padding: 0 (12em/19);
+      margin-bottom: (25em/19);
+    }
+
+    input[type="image"]{
+      margin-top: (20em/16);
+      float: right;
+    }
+    textarea{
+      width: 100%;
+      background: #ffffff;
+      height: (170em/16);
+      font-size: (19em/16);
+      font-family: GothamRounded-Medium;
+      color: #6F7072;
+      padding: (12em/19);
+      box-sizing: border-box;
+    }
+  }
+
+  .title-2{
+    color: #92DAE9;
+    background: #ffffff;
+    font-family: GothamRounded-Medium;
+    font-size: (52em/16);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: (25em/16);
+    margin-top: (40em/52);
+    position: relative;
+
+
+    &:before{
+      position: absolute;
+      width:(108em/52) ;
+      height: (109em/52);
+      content: "";
+      background: url("../images/tel-icon.png") no-repeat;
+      top:(-15em/52);
+      left: (90em/52);
+      z-index: 99;
+    }
+  }
+  .data-contact{
+    .text{
+      color: #ffffff;
+      font-family: GothamRounded-Book;
+      font-size: (25em/16);
+    }
+    .numbers{
+      color: #ffffff;
+      font-family: GothamRounded-Medium;
+      font-size: (42em/16);
+      line-height:(25em/16) ;
+    }
   }
 }

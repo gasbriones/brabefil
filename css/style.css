@@ -154,9 +154,108 @@ html, body {
     padding-left: 0.4em; }
     .news p.other-font {
       font-family: GothamRounded-Medium; }
-  .news .no-margin {
-    padding: 0; }
   .news .tube-2 {
     margin-top: 3.125em; }
+
+.no-margin {
+  padding: 0; }
+
+.contact {
+  background: #92DAE9;
+  padding: 3.125em 0; }
+  .contact .form {
+    width: auto;
+    height: 33.0625em;
+    -webkit-border-radius: 1.875em;
+    -moz-border-radius: 1.875em;
+    border-radius: 1.875em;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: #DEDEE1;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #DEDEE1 0%, #AEB1B3 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #DEDEE1), color-stop(100%, #AEB1B3));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #DEDEE1 0%, #AEB1B3 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #DEDEE1 0%, #AEB1B3 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #DEDEE1 0%, #AEB1B3 100%);
+    /* IE10+ */
+    background: linear-gradient(top, #DEDEE1 0%, #AEB1B3 100%);
+    /* W3C */
+    position: relative;
+    margin-left: 15%;
+    z-index: 90; }
+    .contact .form:before {
+      position: absolute;
+      width: 6em;
+      height: 6em;
+      content: "";
+      background: url("../images/contact-icon.png") no-repeat;
+      top: -0.9375em;
+      left: -0.9375em;
+      z-index: 99; }
+    .contact .form .title {
+      color: #7DBACB;
+      font-family: GothamRounded-Medium;
+      font-size: 2.0625em;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 2.5em;
+      box-sizing: border-box; }
+    .contact .form input[type="text"] {
+      display: block;
+      width: 100%;
+      background: #ffffff;
+      line-height: 2.5em;
+      font-size: 1.1875em;
+      font-family: GothamRounded-Medium;
+      color: #6F7072;
+      box-sizing: border-box;
+      padding: 0 0.63158em;
+      margin-bottom: 1.31579em; }
+    .contact .form input[type="image"] {
+      margin-top: 1.25em;
+      float: right; }
+    .contact .form textarea {
+      width: 100%;
+      background: #ffffff;
+      height: 10.625em;
+      font-size: 1.1875em;
+      font-family: GothamRounded-Medium;
+      color: #6F7072;
+      padding: 0.63158em;
+      box-sizing: border-box; }
+  .contact .title-2 {
+    color: #92DAE9;
+    background: #ffffff;
+    font-family: GothamRounded-Medium;
+    font-size: 3.25em;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5625em;
+    margin-top: 0.76923em;
+    position: relative; }
+    .contact .title-2:before {
+      position: absolute;
+      width: 2.07692em;
+      height: 2.09615em;
+      content: "";
+      background: url("../images/tel-icon.png") no-repeat;
+      top: -0.28846em;
+      left: 1.73077em;
+      z-index: 99; }
+  .contact .data-contact .text {
+    color: #ffffff;
+    font-family: GothamRounded-Book;
+    font-size: 1.5625em; }
+  .contact .data-contact .numbers {
+    color: #ffffff;
+    font-family: GothamRounded-Medium;
+    font-size: 2.625em;
+    line-height: 1.5625em; }
 
 /*# sourceMappingURL=style.css.map */
