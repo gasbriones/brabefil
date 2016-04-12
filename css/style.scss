@@ -49,6 +49,11 @@ html, body {
   padding: 0;
 }
 
+
+[class*="grid"] {
+  margin: 0;
+}
+
 .wrapper{
   margin: 0 auto;
   width: 100%;
@@ -57,7 +62,7 @@ html, body {
 
 .home{
   height: (840em/16);
-  background: url("../images/fondo_home.png") no-repeat;
+  background: url("../images/fondo_home.jpg") no-repeat;
   background-size: cover;
   position: relative;
   border-bottom: solid #0D6899 (20em/16);
@@ -140,6 +145,17 @@ html, body {
     font-size: (25em/16);
     font-family: GothamRounded-Light;
     color: #58585A;
+    position: relative;
+    &:before{
+      position: absolute;
+      width:(10em/16) ;
+      height: (1em/16);
+      content: "";
+      bottom:(0em/16);
+      left: (7em/16);
+      background: #58585A;
+      z-index: 99;
+    }
   }
   .pdf-icon{
     text-align: center;
@@ -165,11 +181,12 @@ html, body {
   margin-top: (30em/16);
   height: (438em/16);
   .tubos{
-    background: url("../images/tubos.png");
+    background: url("../images/foto_minivial.jpg");
     background-size: cover;
   }
   .news-info{
-    background: url("../images/fondo_azul.png");
+    background: url("../images/fondo_minivial.jpg");
+    background-size: cover;
   }
 
   .alert{
@@ -181,6 +198,7 @@ html, body {
     text-transform: uppercase;
     padding: 0 (10em/30);
     margin-top: (70em/30);
+    margin-left: (70em/30);
     z-index: 4;
     position: relative;
   }
@@ -193,10 +211,11 @@ html, body {
     font-family: GothamRounded-Book;
     text-transform: uppercase;
     padding: (15em/52) 0 0 (70em/52);
-    width: 100%;
-    margin: (-10em/52) 0 0 (-80em/52);
+    width: 102%;
+    margin: (-10em/52) 0 0;
     z-index: 3;
     position: relative;
+    box-sizing: border-box;
     span{
       font-family: GothamRounded-Bold;
     }
@@ -206,9 +225,22 @@ html, body {
     color: #ffffff;
     width: 95%;
     font-family: GothamRounded-Book;
-    padding-left: (10em/25);
+    margin-left: (75em/25);
+    display:list-item;
+    box-sizing: border-box;
+    position: relative;
     &.other-font{
       font-family: GothamRounded-Medium;
+      &:before{
+        position: absolute;
+        width:(10em/16) ;
+        height: (1em/16);
+        content: "";
+        bottom:(-12em/16);
+        left: 0;
+        background: #ffffff;
+        z-index: 99;
+      }
     }
   }
 
@@ -216,7 +248,8 @@ html, body {
 
 
   .tube-2{
-    margin-top:(50em/16) ;
+    margin-top:(50em/16);
+    z-index: 9999;
   }
 }
 
@@ -318,14 +351,45 @@ html, body {
       box-sizing: border-box;
       padding: (25em/42);
       border: solid 1px #ffffff;
+      display: table;
       a{
         color: #ffffff;
         font-family: GothamRounded-Medium;
-
+        display: block;
         line-height:(25em/16);
         text-decoration: none;
       }
 
     }
   }
+}
+
+
+.mobile-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0D6899;
+  z-index: 9999999999;
+  width: 100%;
+  visibility: hidden;
+  img{
+    margin-top: (10em/16);
+  }
+}
+.menu-mobile{
+  margin-left: (10em/16);
+  li{
+    float: left;
+    margin-right: (10em/16);
+    a{
+      font-size: (18em/16);
+      color: #000;
+      font-family: GothamRounded-Medium;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
 }

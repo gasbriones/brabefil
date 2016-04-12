@@ -1,51 +1,121 @@
-@import 'mixin';
+@media screen and (max-width: 64em){
+  .contact .title-2::before{
+    left: 0;
+  }
 
-@media screen and (max-width: 1024px) {
-  #menu-header-menu{
+  .header .services{
+    font-size: (22em/16);
+  }
+  .catalog .title{
+    font-size: (47em/16);
+  }
+  .news p{
+    margin-left: (30em/16);
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 48em){
+  .dialog{
+    img{
+      width: 100%;
+    }
+  }
+
+  .home::before{
+    top:52%;
+  }
+
+  .catalog .instructions::before{
     display: none;
   }
+  .catalog .title{
+    padding: (10em/52)  (10em/52) (2em/52) (10em/52);
+  }
+
+  #news{
+    height: inherit;
+  }
+  .news .tube-2{
+    margin-top: 0;
+    img{
+      margin: 0 auto;
+      display: table;
+      margin-bottom: (15em/16);
+    }
+  }
+
+  .contact .form{
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .header .services{
+    font-size: (20em/16);
+  }
+  .dialog{
+    margin-top: (40em/16);
+  }
 }
 
-@media screen and (max-width: 768px) {
-  .social{
-    position: static !important;
-    margin-top: (20em/16);
+@media screen and (max-width: 35.5em){
+  .item-list{
+    margin: 0 auto;
+    width: 48%;
     li{
-      text-align: center !important;
+      color: #4d4d4d;
     }
   }
-}
+  .dialog{
+    display: none;
+  }
+  .home::before{
+    display: none;
+  }
 
-@media screen and (max-width: 650px) {
-  .article{
-    .details-img,.principal-img,.details{
-      float: none;
-      width: 100%;
+  .download{
+    a{
+      margin: 0 auto;
+      display: table;
     }
+  }
+  .catalog .title{
+    padding: (5em/52) 0;
+    margin-top: (30em/52);
+    text-align: center;
+  }
+  .tubos{
+    display: none;
+  }
+  .news .mini{
+    text-align: center;
+    padding-left: (0em/16);
+  }
 
-    .thumbnails{
-      width: 100%;
-      li{
-        float: left;
-        width: 30%;
-      }
+  .title-2{
+    font-size: (40em/16) !important;
+    &:before{
+      display: none;
     }
-
   }
-}
-
-
-
-@media (min-width: 361px) and (max-width: 768px) {
-  .bx-wrapper .bx-viewport{
-    width: 77% !important;
+  .numbers{
+    font-size: (26em/16) !important;
   }
-}
-
-@media screen and (max-width: 360px) {
-  .bx-wrapper .bx-viewport{
-    width: 62% !important;
+  .title{
+    font-size: (30em/16) !important;
   }
+  .form{
+    &:before{
+      display: none;
+    }
+  }
+
+  .mobile-wrapper{
+    visibility: visible;
+  }
+
+  .home{
+    padding-top: (40em/16);
+  }
+
 }
-
-

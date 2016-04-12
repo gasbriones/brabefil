@@ -15,16 +15,29 @@
     <link rel="shortcut icon" href="favicon.ico"/>
 
     <script src="js/libs/jquery-2.1.3.min.js"></script>
+    <script src="js/libs/jquery.scrollify.min.js"></script>
     <script src="js/libs/wow.min.js"></script>
     <script src="js/init.js"></script>
     <title>Brabefil - Distribuidores de GVS - Life Sciences </title>
 </head>
 <body>
 <div class="site">
+    <div class="grid-middle grid-center mobile-wrapper">
+        <div class="col-2">
+            <img src="images/menu-icon.png">
+        </div>
+        <div class="col-10  no-margin">
+            <ul class="menu-mobile">
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
     <section id="home" class="home clearfix">
         <div class="wrapper content">
             <div class="grid">
-                <div class="col-6 header" push-left="off-3">
+                <div class="col-6_sm-7_xs-12 header" push-left="off-3_sm-1_xs-0">
                     <a href="#" class="logo">
                         <img src="images/logo.png"/>
                     </a>
@@ -36,7 +49,7 @@
                     </div>
                     <div class="services">Cromatografía - Filtración- Microbiología</div>
                 </div>
-                <div class="col-2" push-left="off-1">
+                <div class="col-2_sm-3_xs-12" push-left="off-1_xs-0">
                     <ul class="item-list" data-wow-duration="1s" data-wow-iteration="1">
                         <li>Filtros papel</li>
                         <li>Membranas</li>
@@ -68,27 +81,27 @@
     <section id="catalogo" class="catalog clearfix">
         <div class="wrapper content">
             <div class="grid">
-                <div push-left="off-3" class="col-7">
+                <div class="col-7_sm-9_xs-12" push-left="off-3_sm-0_xs-0" >
                     <h2 class="title wow bounceInLeft">Catálogo digital</h2>
                     <div class="instructions grid-middle">
                         <div class="pdf-icon col-3">
                             <img src="images/pdf-icon.png">
                         </div>
-                        <div class="text col-7">
+                        <div class="text col-7_sm-9">
                             Descargue nuestro Catálogo de
                             Productos en formato PDF con
                             toda información técnica.
                         </div>
                     </div>
                 </div>
-                <div class="col-2 download">
-                    <a href="#" class="hvr-grow"><img class="wow bounceInDown" src="images/download.png" /></a>
+                <div class="col-2_sm-3_xs-12 download">
+                    <a href="files/Catalog_2014_GVS_Life_Sciences.pdf" target="_blank" class="hvr-grow"><img class="wow bounceInDown" src="images/download.png" /></a>
                 </div>
             </div>
             <div id="news" class="grid news">
-                <div class="tubos col-4 wow pulse"></div>
-                <div class="news-info col-8 grid">
-                    <div class="col-6 no-margin">
+                <div class="tubos col-3_sm-5 wow pulse"></div>
+                <div class="news-info col-9_sm-7_xs-12 grid">
+                    <div class="col-6_sm-12_xs-12 no-margin">
                         <h3 class="alert wow fadeInDown">Nuevo!</h3>
                         <h2 class="mini">Mini <span>vial</span></h2>
                         <p>Haga más fácil el proceso de
@@ -96,7 +109,7 @@
                         <p class="other-font">Menor volúmen muerto del
                             mercado.</p>
                     </div>
-                    <div class="col-6 no-margin tube-2">
+                    <div class="col-6_sm-12_xs-12 no-margin tube-2">
                         <img class="wow flipInX" src="images/tubos-2.png" />
                     </div>
 
@@ -106,26 +119,11 @@
     </section>
     <section id="contacto" class="contact clearfix">
         <div class="wrapper content">
-            <div class="grid">
-                <div class="col-5 no-margin">
-                    <div class="form clearfix wow fadeInUpBig">
-                        <h2 class="title">Formulario</h2>
-                        <div class="grid-center">
-                            <div class="col-9">
-                                <form>
-                                    <input type="text"placeholder="Nombre" />
-                                    <input type="text"placeholder="Empresa" />
-                                    <textarea placeholder="Mensaje"></textarea>
-                                    <input type="image" src="images/submit.png" value="enviar">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-7 no-margin data-contact">
+            <div class="grid-reverse">
+                <div class="col-7_md-6_sm-12_xs-12 no-margin data-contact">
                     <h2 class="title-2">Contacto</h2>
                     <div class="grid-center">
-                        <div class="col-7">
+                        <div class="col-8_md-11_sm-7_xs-11">
                             <p class="text">
                                 Comuníquese con nosotros
                                 a los siguientes números:
@@ -138,6 +136,21 @@
                         </div>
                     </div>
 
+                </div>
+                <div class="col-5_md-6_sm-12 no-margin">
+                    <div class="form clearfix wow fadeInUpBig">
+                        <h2 class="title">Formulario</h2>
+                        <div class="grid-center">
+                            <div class="col-9_sm-11">
+                                <form>
+                                    <input type="text"placeholder="Nombre" />
+                                    <input type="text"placeholder="Empresa" />
+                                    <textarea placeholder="Mensaje"></textarea>
+                                    <input type="image" src="images/submit.png" value="enviar">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

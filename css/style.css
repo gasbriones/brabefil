@@ -22,6 +22,9 @@ html, body {
   margin: 0;
   padding: 0; }
 
+[class*="grid"] {
+  margin: 0; }
+
 .wrapper {
   margin: 0 auto;
   width: 100%;
@@ -29,7 +32,7 @@ html, body {
 
 .home {
   height: 52.5em;
-  background: url("../images/fondo_home.png") no-repeat;
+  background: url("../images/fondo_home.jpg") no-repeat;
   background-size: cover;
   position: relative;
   border-bottom: solid #0D6899 1.25em;
@@ -96,7 +99,17 @@ html, body {
   .catalog .text {
     font-size: 1.5625em;
     font-family: GothamRounded-Light;
-    color: #58585A; }
+    color: #58585A;
+    position: relative; }
+    .catalog .text:before {
+      position: absolute;
+      width: 0.625em;
+      height: 0.0625em;
+      content: "";
+      bottom: 0em;
+      left: 0.4375em;
+      background: #58585A;
+      z-index: 99; }
   .catalog .pdf-icon {
     text-align: center;
     z-index: 99; }
@@ -117,10 +130,11 @@ html, body {
   margin-top: 1.875em;
   height: 27.375em; }
   .news .tubos {
-    background: url("../images/tubos.png");
+    background: url("../images/foto_minivial.jpg");
     background-size: cover; }
   .news .news-info {
-    background: url("../images/fondo_azul.png"); }
+    background: url("../images/fondo_minivial.jpg");
+    background-size: cover; }
   .news .alert {
     background: #DEDA00;
     color: #ffffff;
@@ -130,6 +144,7 @@ html, body {
     text-transform: uppercase;
     padding: 0 0.33333em;
     margin-top: 2.33333em;
+    margin-left: 2.33333em;
     z-index: 4;
     position: relative; }
   .news .mini {
@@ -140,10 +155,11 @@ html, body {
     font-family: GothamRounded-Book;
     text-transform: uppercase;
     padding: 0.28846em 0 0 1.34615em;
-    width: 100%;
-    margin: -0.19231em 0 0 -1.53846em;
+    width: 102%;
+    margin: -0.19231em 0 0;
     z-index: 3;
-    position: relative; }
+    position: relative;
+    box-sizing: border-box; }
     .news .mini span {
       font-family: GothamRounded-Bold; }
   .news p {
@@ -151,11 +167,24 @@ html, body {
     color: #ffffff;
     width: 95%;
     font-family: GothamRounded-Book;
-    padding-left: 0.4em; }
+    margin-left: 3em;
+    display: list-item;
+    box-sizing: border-box;
+    position: relative; }
     .news p.other-font {
       font-family: GothamRounded-Medium; }
+      .news p.other-font:before {
+        position: absolute;
+        width: 0.625em;
+        height: 0.0625em;
+        content: "";
+        bottom: -0.75em;
+        left: 0;
+        background: #ffffff;
+        z-index: 99; }
   .news .tube-2 {
-    margin-top: 3.125em; }
+    margin-top: 3.125em;
+    z-index: 9999; }
 
 .no-margin {
   padding: 0; }
@@ -257,11 +286,36 @@ html, body {
     border-radius: 0.95238em;
     box-sizing: border-box;
     padding: 0.59524em;
-    border: solid 1px #ffffff; }
+    border: solid 1px #ffffff;
+    display: table; }
     .contact .data-contact .numbers a {
       color: #ffffff;
       font-family: GothamRounded-Medium;
+      display: block;
       line-height: 1.5625em;
       text-decoration: none; }
+
+.mobile-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #0D6899;
+  z-index: 9999999999;
+  width: 100%;
+  visibility: hidden; }
+  .mobile-wrapper img {
+    margin-top: 0.625em; }
+
+.menu-mobile {
+  margin-left: 0.625em; }
+  .menu-mobile li {
+    float: left;
+    margin-right: 0.625em; }
+    .menu-mobile li a {
+      font-size: 1.125em;
+      color: #000;
+      font-family: GothamRounded-Medium; }
+    .menu-mobile li:last-child {
+      margin-right: 0; }
 
 /*# sourceMappingURL=style.css.map */
